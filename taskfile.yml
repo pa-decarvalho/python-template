@@ -1,0 +1,32 @@
+---
+version: "3"
+
+tasks:
+  default:
+    cmds:
+      - task: help
+
+  bootstrap:
+    desc: Bootstrap project
+    silent: true
+    cmds:
+      - poetry install
+
+  clean:
+    desc: Cleanup project
+    silent: true
+    cmds:
+      - poetry env remove --all
+
+  reinit:
+    desc: Reinit project
+    silent: true
+    cmds:
+      - task: clean
+      - task: bootstrap
+
+  help:
+    desc: Display help
+    silent: true
+    cmds:
+      - task --list
