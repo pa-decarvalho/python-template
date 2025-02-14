@@ -17,6 +17,9 @@ tasks:
     silent: true
     cmds:
       - poetry env remove --all
+      - rm -rf .pytest_cache
+      - rm -rf output
+      - rm -rf tests/__pycache__
 
   reinit:
     desc: Reinit project
