@@ -6,8 +6,8 @@ tasks:
     cmds:
       - task: help
 
-  bootstrap:
-    desc: Bootstrap project
+  init:
+    desc: Init project
     silent: true
     cmds:
       - poetry install
@@ -23,7 +23,15 @@ tasks:
     silent: true
     cmds:
       - task: clean
-      - task: bootstrap
+      - task: init
+
+  test:
+    desc: Run project tests
+    silent: true
+    cmds:
+      - rm -rf output
+      - poetry run copier copy --vcs-ref HEAD --data project_name="test" . output
+      - poetry run pytest -v
 
   help:
     desc: Display help
