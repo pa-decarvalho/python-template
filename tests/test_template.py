@@ -1,13 +1,18 @@
+"""Test template."""
+
 from copier import run_copy
 import pytest
 from pathlib import Path
 
+
 @pytest.fixture
-def tmp_dir(tmp_path):
+def tmp_dir(tmp_path: Path) -> None:
+    """Return tmp path for template generation."""
     return tmp_path / "generated"
 
-def test_template_generation(tmp_dir):
-    # Copy template with default values
+
+def test_template_generation(tmp_dir: Path) -> None:
+    """Test template generation."""
     run_copy(
         src_path="template",
         dst_path=tmp_dir,
