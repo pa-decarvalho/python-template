@@ -7,4 +7,3 @@ project_name:
 
 # Settings
 _subdirectory: template
-_templates_suffix: .j2

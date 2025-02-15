@@ -28,12 +28,17 @@ tasks:
       - task: clean
       - task: init
 
+  lint:
+    desc: Run project linters
+    silent: true
+    cmds:
+      - poetry run ruff check --config .config/ruff.toml
+      - poetry run ruff format --config .config/ruff.toml --check --diff
+
   test:
     desc: Run project tests
     silent: true
     cmds:
-      - rm -rf output
-      - poetry run copier copy --vcs-ref HEAD --data project_name="test" . output
       - poetry run pytest -v
 
   help:
