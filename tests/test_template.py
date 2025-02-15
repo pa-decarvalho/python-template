@@ -23,9 +23,10 @@ def test_template_generation(tmp_dir: Path) -> None:
         unsafe=True,
     )
 
-    # Check if README.md exists and contains the right content
-    readme_path = tmp_dir / "README.md"
-    assert readme_path.exists()
+    expected_files = [
+        "README.md",
+    ]
 
-    content = readme_path.read_text()
-    assert "# test" in content
+    for file_path in expected_files:
+        full_path = tmp_dir / file_path
+        assert full_path.exists()

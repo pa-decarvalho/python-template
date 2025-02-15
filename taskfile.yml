@@ -42,6 +42,13 @@ tasks:
     cmds:
       - poetry run pytest -v
 
+  pipeline:
+    desc: Run lint and test tasks
+    silent: true
+    cmds:
+      - task: lint
+      - task: test
+
   help:
     desc: Display help
     silent: true
