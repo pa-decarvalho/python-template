@@ -7,3 +7,6 @@ __pycache__
 # Tests
 .pytest_cache
 output
+
+# Linters
+.ruff_cache
