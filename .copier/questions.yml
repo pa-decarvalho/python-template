@@ -1,0 +1,5 @@
+---
+project_name:
+  type: str
+  placeholder: my_project_name
+  help: Enter the name of the Python project

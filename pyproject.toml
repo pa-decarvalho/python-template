@@ -24,6 +24,7 @@ copier = "^9.4.1"
 pytest = "^8.3.4"
 commitizen = "^4.2.1"
 ruff = "^0.9.6"
+yamllint = "^1.35.1"
 
 [tool.commitizen]
 name = "cz_conventional_commits"
