@@ -17,7 +17,7 @@ def test_template_generation(tmp_dir: Path) -> None:
         src_path="template",
         dst_path=tmp_dir,
         data={
-            "project_name": "test_project",
+            "project_name": "test-project",
         },
         vcs_ref="HEAD",
         unsafe=True,
@@ -25,6 +25,7 @@ def test_template_generation(tmp_dir: Path) -> None:
 
     expected_files = [
         "README.md",
+        "pyproject.toml",
     ]
 
     for file_path in expected_files:
