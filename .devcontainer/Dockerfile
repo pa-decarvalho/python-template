@@ -27,3 +27,5 @@ RUN wget -q -P /tmp https://github.com/hadolint/hadolint/releases/download/v$HAD
 RUN pip install --no-cache-dir --upgrade pip poetry
 
 USER vscode
+
+RUN echo 'alias ll="ls -lisa"' >> ~/.bashrc
