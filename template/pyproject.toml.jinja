@@ -1,9 +1,13 @@
-[tool.poetry]
+[project]
 name = "{{ project_name }}"
 version = "0.0.0"
 description = "{{ description }}"
+authors = [
+  {name = "{{ author_name }}", email = "{{ author_email }}"}
+]
 readme = "README.md"
 
+[tool.poetry]
 packages = [
   {include = "{{ package_name }}", from = "src"},
 ]

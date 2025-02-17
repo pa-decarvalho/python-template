@@ -17,3 +17,17 @@ description:
   type: str
   placeholder: My project description
   help: Enter the description of the Python project
+
+author_name:
+  type: str
+  placeholder: Michael Scott
+  help: Enter your name
+
+author_email:
+  type: str
+  placeholder: yourname@email.com
+  help: Enter your email
+  validator: |
+    {% if not (author_email | regex_search('([A-Za-z0-9]+[.-_])*[A-Za-z0-9]+@[A-Za-z0-9-]+(\.[A-Z|a-z]{2,})+')) %}
+    Please enter a valid email address
+    {% endif %}

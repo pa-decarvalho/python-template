@@ -10,6 +10,8 @@ DATA_SAMPLE = {
     "project_name": "test-project",
     "package_name": "test_project",
     "description": "My description",
+    "author_name": "Dwight Schrute",
+    "author_email": "dwight.schrute@email.com",
 }
 
 
