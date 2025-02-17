@@ -9,6 +9,7 @@ OUTPUT_DIR = Path("./output")
 DATA_SAMPLE = {
     "project_name": "test-project",
     "package_name": "test_project",
+    "description": "My description",
 }
 
 

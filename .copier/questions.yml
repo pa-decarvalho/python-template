@@ -12,3 +12,8 @@ package_name:
     {% if not (package_name | regex_search('^[a-z][a-z0-9\_]+$')) %}
     Package name must start with a letter, followed one or more letters, digits or underscores all lowercase
     {% endif %}
+
+description:
+  type: str
+  placeholder: My project description
+  help: Enter the description of the Python project
