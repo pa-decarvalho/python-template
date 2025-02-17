@@ -41,6 +41,7 @@ tasks:
     desc: Run project tests
     silent: true
     cmds:
+      - rm -rf output
       - poetry run pytest -v
 
   pipeline:
