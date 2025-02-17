@@ -1,5 +1,14 @@
 ---
 project_name:
   type: str
-  placeholder: my_project_name
+  placeholder: my-project-name
   help: Enter the name of the Python project
+
+package_name:
+  type: str
+  placeholder: my_package_name
+  help: Enter the name of the Python package
+  validator: |
+    {% if not (package_name | regex_search('^[a-z][a-z0-9\_]+$')) %}
+    Package name must start with a letter, followed one or more letters, digits or underscores all lowercase
+    {% endif %}

@@ -3,6 +3,10 @@ name = "{{ project_name }}"
 version = "0.0.0"
 readme = "README.md"
 
+packages = [
+  {include = "{{ package_name }}", from = "src"},
+]
+
 [tool.poetry.dependencies]
 python = "^3.9"
 

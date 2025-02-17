@@ -48,7 +48,8 @@ dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
 
 [lint.extend-per-file-ignores]
 "__init__.py" = ["D104"]
-"tests/*.py" = ["S101"]
+"template/*" = ["N999"]
+"tests/*.py" = ["S101", "S603", "S607"]
 
 [format]
 # Like Black, use double quotes for strings.
