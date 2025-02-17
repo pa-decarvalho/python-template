@@ -5,24 +5,27 @@ from pathlib import Path
 import subprocess
 
 
+OUTPUT_DIR = Path("./output")
 DATA_SAMPLE = {
     "project_name": "test-project",
     "package_name": "test_project",
 }
 
 
-def test_template_generation() -> None:
+def test_generate_template() -> None:
     """Test template generation."""
-    output_dir = Path("./output")
-
     run_copy(
         src_path=".",
-        dst_path=output_dir,
+        dst_path=OUTPUT_DIR,
         data=DATA_SAMPLE,
         vcs_ref="HEAD",
         unsafe=True,
     )
+    assert OUTPUT_DIR.exists()
 
+
+def test_all_files_are_generated() -> None:
+    """Test all files are generated."""
     # Expected files after first generation
     expected_files = [
         f"src/{DATA_SAMPLE['project_name'].replace('-', '_')}/__init__.py",
@@ -32,13 +35,16 @@ def test_template_generation() -> None:
     ]
 
     for file_path in expected_files:
-        full_path = output_dir / file_path
+        full_path = OUTPUT_DIR / file_path
         assert full_path.exists()
 
+
+def test_poetry_install_command() -> None:
+    """Test poetry install command works."""
     # Run poetry install
     result = subprocess.run(
         ["poetry", "install"],
-        cwd=output_dir,
+        cwd=OUTPUT_DIR,
         capture_output=True,
         text=True,
         check=True,
@@ -53,5 +59,5 @@ def test_template_generation() -> None:
     ]
 
     for file_path in expected_files_after_install:
-        full_path = output_dir / file_path
+        full_path = OUTPUT_DIR / file_path
         assert full_path.exists()
