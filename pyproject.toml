@@ -2,12 +2,12 @@
 name = "python-template"
 version = "0.0.0"
 description = "A python project template"
-license = "MIT"
+license = { text = "MIT" }
 authors = [
-  "Philippe-André De Carvalho <philippe.andre.decarvalho@gmail.com>"
+    { name = "Philippe-André De Carvalho", email = "philippe.andre.decarvalho@gmail.com" },
 ]
 maintainers = [
-  "Philippe-André De Carvalho <philippe.andre.decarvalho@gmail.com>"
+    { name = "Philippe-André De Carvalho", email = "philippe.andre.decarvalho@gmail.com" },
 ]
 readme = "README.md"
 homepage = "https://github.com/pa-decarvalho/python-template"
@@ -37,3 +37,4 @@ major_version_zero = true
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+    
