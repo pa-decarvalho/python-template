@@ -9,14 +9,15 @@ maintainers = [
     { name = "{{ author_name }}", email = "{{ author_email }}" },
 ]
 readme = "README.md"
+requires-python = ">=3.9,<4.0"
+dependencies = [
+]
 
 [tool.poetry]
+requires-poetry = ">=2.0"
 packages = [
     { include = "{{ package_name }}", from = "src" },
 ]
-
-[tool.poetry.dependencies]
-python = "^3.9"
 
 [build-system]
 requires = ["poetry-core"]
