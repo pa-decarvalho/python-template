@@ -10,15 +10,20 @@ maintainers = [
     { name = "Philippe-André De Carvalho", email = "philippe.andre.decarvalho@gmail.com" },
 ]
 readme = "README.md"
+requires-python = ">=3.9,<4.0"
+keywords = ["python", "template"]
+dependencies = [
+    "copier (>=9.5.0,<10.0.0)"
+]
+
+[project.urls]
 homepage = "https://github.com/pa-decarvalho/python-template"
 repository = "https://github.com/pa-decarvalho/python-template"
 documentation = "https://pa-decarvalho.github.io/python-template/"
-keywords = ["python", "template"]
-package-mode = false
 
-[tool.poetry.dependencies]
-python = "^3.9"
-copier = "^9.4.1"
+[tool.poetry]
+requires-poetry = ">=2.0"
+package-mode = false
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.4"
