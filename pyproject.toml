@@ -1,4 +1,4 @@
-[tool.poetry]
+[project]
 name = "python-template"
 version = "0.0.0"
 description = "A python project template"
@@ -37,4 +37,3 @@ major_version_zero = true
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
-    

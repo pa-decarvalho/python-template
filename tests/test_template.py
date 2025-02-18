@@ -32,6 +32,7 @@ def test_all_files_are_generated() -> None:
     # Expected files after first generation
     expected_files = [
         f"src/{DATA_SAMPLE['project_name'].replace('-', '_')}/__init__.py",
+        ".editorconfig",
         ".copier-answers.yml",
         "pyproject.toml",
         "README.md",
