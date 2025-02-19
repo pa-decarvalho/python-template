@@ -10,5 +10,6 @@ tasks:
 
   all:
     desc: Run all test
+    silent: true
     cmds:
       - task: pytest
