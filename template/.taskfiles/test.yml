@@ -1,0 +1,14 @@
+---
+version: "3"
+
+tasks:
+  pytest:
+    desc: Run pytest command
+    silent: true
+    cmds:
+      - poetry run pytest -vv
+
+  all:
+    desc: Run all test
+    cmds:
+      - task: pytest

@@ -31,12 +31,20 @@ def test_all_files_are_generated() -> None:
     """Test all files are generated."""
     # Expected files after first generation
     expected_files = [
+        ".config/ruff.toml",
+        ".config/yamllint.yml",
+        ".taskfiles/lint.yml",
+        ".taskfiles/test.yml",
         f"src/{DATA_SAMPLE['project_name'].replace('-', '_')}/__init__.py",
+        f"src/{DATA_SAMPLE['project_name'].replace('-', '_')}/__main__.py",
         f"src/{DATA_SAMPLE['project_name'].replace('-', '_')}/py.typed",
+        "tests/__init__.py",
+        "tests/test_example.py",
         ".editorconfig",
         ".copier-answers.yml",
         "pyproject.toml",
         "README.md",
+        "taskfile.yml",
     ]
 
     for file_path in expected_files:

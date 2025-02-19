@@ -42,7 +42,14 @@ tasks:
     silent: true
     cmds:
       - rm -rf output
-      - poetry run pytest -v
+      - poetry run pytest tests -v
+      - |
+        cd output
+        task init
+        task clean
+        task reinit
+        task lint
+        task test
 
   pipeline:
     desc: Run lint and test tasks
