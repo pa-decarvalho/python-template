@@ -1,0 +1,48 @@
+---
+version: "3"
+
+includes:
+  lint: .taskfiles/lint.yml
+  test: .taskfiles/test.yml
+
+tasks:
+  default:
+    cmds:
+      - task: help
+
+  init:
+    desc: Init project
+    silent: true
+    cmds:
+      - poetry install
+
+  clean:
+    desc: Cleanup project
+    silent: true
+    cmds:
+      - poetry env remove --all
+
+  reinit:
+    desc: Reinit project
+    silent: true
+    cmds:
+      - task: clean
+      - task: init
+
+  lint:
+    desc: Run all linters
+    silent: true
+    cmds:
+      - task: lint:all
+
+  test:
+    desc: Run all tests
+    silent: true
+    cmds:
+      - task: test:all
+
+  help:
+    desc: Display help
+    silent: true
+    cmds:
+      - task --list

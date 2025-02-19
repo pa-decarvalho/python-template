@@ -19,6 +19,13 @@ packages = [
     { include = "{{ package_name }}", from = "src" },
 ]
 
+[tool.poetry.group.lint.dependencies]
+ruff = "^0.9.6"
+yamllint = "^1.35.1"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.4"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
