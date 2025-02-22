@@ -4,6 +4,10 @@ version: "3"
 includes:
   lint: .taskfiles/lint.yml
   test: .taskfiles/test.yml
+  override:
+    taskfile: .taskfiles/override.yml
+    flatten: true
+    optional: true
 
 tasks:
   default:

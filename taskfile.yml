@@ -45,12 +45,15 @@ tasks:
       - rm -rf output
       - poetry run pytest tests -v
       - |
+        cp tests/fixtures/override.yml output/.taskfiles
         cd output
+        task help
         task init
         task clean
         task reinit
         task lint
         task test
+        task namespace:test
 
   pipeline:
     desc: Run lint and test tasks
