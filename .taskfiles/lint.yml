@@ -1,0 +1,30 @@
+---
+version: "3"
+
+tasks:
+  cz-check:
+    desc: Check all commit messages from first commit
+    silent: true
+    cmds:
+      - poetry run cz check --rev-range 33eab2d..HEAD
+
+  ruff:
+    desc: Run ruff linter
+    silent: true
+    cmds:
+      - poetry run ruff check --config .config/ruff.toml
+      - poetry run ruff format --config .config/ruff.toml --check --diff
+
+  yamllint:
+    desc: Run yamllint linter
+    silent: true
+    cmds:
+      - poetry run yamllint -c .config/yamllint.yml . --strict
+
+  all:
+    desc: Run all linters
+    silent: true
+    cmds:
+      - task: cz-check
+      - task: ruff
+      - task: yamllint
