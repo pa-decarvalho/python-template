@@ -26,10 +26,14 @@ requires-poetry = ">=2.0"
 package-mode = false
 
 [tool.poetry.group.dev.dependencies]
-pytest = "^8.3.4"
 commitizen = "^4.2.1"
+
+[tool.poetry.group.lint.dependencies]
 ruff = "^0.9.6"
 yamllint = "^1.35.1"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.4"
 
 [tool.commitizen]
 name = "cz_conventional_commits"
