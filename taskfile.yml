@@ -1,6 +1,9 @@
 ---
 version: "3"
 
+includes:
+  lint: .taskfiles/lint.yml
+
 tasks:
   default:
     cmds:
@@ -33,10 +36,7 @@ tasks:
     desc: Run project linters
     silent: true
     cmds:
-      - poetry run cz check --rev-range 33eab2d..HEAD
-      - poetry run ruff check --config .config/ruff.toml
-      - poetry run ruff format --config .config/ruff.toml --check --diff
-      - poetry run yamllint -c .config/yamllint.yml . --strict
+      - task: lint:all
 
   test:
     desc: Run project tests
