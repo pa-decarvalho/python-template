@@ -1,0 +1,17 @@
+## 0.1.0 (2025-02-22)
+
+### Feat
+
+- add devcontainer to the template
+- add silent true to some tasks
+- add task to the template
+- add main python file
+- add py.typed file
+- add requires-python and requires-poetry params in pyproject.toml
+- add editorconfig file and change pyproject.toml
+- add author name and email
+- add description to the template
+- add copier answer file and init package file
+- **template**: add pyproject.toml file
+- **template**: change readme title
+- init template with readme file
