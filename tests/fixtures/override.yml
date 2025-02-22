@@ -1,0 +1,9 @@
+---
+version: "3"
+
+tasks:
+  namespace:test:
+    desc: Add test task in override
+    silent: true
+    cmds:
+      - echo "Run namespace:test command"
