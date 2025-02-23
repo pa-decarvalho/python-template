@@ -25,16 +25,24 @@ documentation = "https://pa-decarvalho.github.io/python-template/"
 requires-poetry = ">=2.0"
 package-mode = false
 
+[tool.poetry.group.dev]
+optional = true
 [tool.poetry.group.dev.dependencies]
 commitizen = "^4.2.1"
 
+[tool.poetry.group.lint]
+optional = true
 [tool.poetry.group.lint.dependencies]
 ruff = "^0.9.6"
 yamllint = "^1.35.1"
 
+[tool.poetry.group.test]
+optional = true
 [tool.poetry.group.test.dependencies]
 pytest = "^8.3.4"
 
+[tool.poetry.group.docs]
+optional = true
 [tool.poetry.group.docs.dependencies]
 mkdocs = "^1.6.1"
 
