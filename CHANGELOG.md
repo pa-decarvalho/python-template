@@ -1,3 +1,9 @@
+## 0.3.0 (2025-02-23)
+
+### Feat
+
+- add optional groups for lint and test in template
+
 ## 0.2.0 (2025-02-22)
 
 ### Feat
