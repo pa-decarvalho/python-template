@@ -1,3 +1,9 @@
+## 0.4.0 (2025-02-23)
+
+### Feat
+
+- add copier task to allow users to update easily
+
 ## 0.3.0 (2025-02-23)
 
 ### Feat
