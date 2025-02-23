@@ -19,6 +19,11 @@ packages = [
     { include = "{{ package_name }}", from = "src" },
 ]
 
+[tool.poetry.group.dev]
+optional = true
+[tool.poetry.group.dev.dependencies]
+copier = "^9.5.0"
+
 [tool.poetry.group.lint]
 optional = true
 [tool.poetry.group.lint.dependencies]

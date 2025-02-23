@@ -1,0 +1,14 @@
+---
+version: "3"
+
+tasks:
+  update:
+    desc: Run copier update
+    silent: true
+    cmds:
+      - poetry run copier update
+
+  update-defaults:
+    desc: Run copier update with default answers
+    cmds:
+      - poetry run copier update --defaults
