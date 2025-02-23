@@ -14,7 +14,7 @@ tasks:
     desc: Init project
     silent: true
     cmds:
-      - poetry install
+      - poetry install --with dev,lint,test,docs
 
   clean:
     desc: Cleanup project
