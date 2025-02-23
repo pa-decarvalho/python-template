@@ -1,0 +1,15 @@
+---
+version: "3"
+
+tasks:
+  build:
+    desc: Run mkdocs build command
+    silent: true
+    cmds:
+      - poetry run mkdocs build
+
+  serve:
+    desc: Run mkdocs serve command
+    silent: true
+    cmds:
+      - poetry run mkdocs serve

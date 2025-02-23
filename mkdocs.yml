@@ -1,0 +1,17 @@
+---
+# Project information
+site_name: Python Template
+site_url: https://pa-decarvalho.github.io/python-template/
+site_description: A python project template
+
+# Repository
+repo_name: python-template
+repo_url: https://github.com/pa-decarvalho/python-template
+
+# Theme
+theme:
+  name: readthedocs
+
+# Plugins
+plugins:
+  - search
