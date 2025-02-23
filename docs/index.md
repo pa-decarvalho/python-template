@@ -33,3 +33,9 @@ Starting a new Python project involves many repetitive setup tasks. This templat
 - Python 3.9 or higher
 - A Git repository
 - [Task](https://taskfile.dev/) (not mandatory but recommended)
+
+## Example Project
+
+You can see what a project looks like once generated with this template in the following [example](https://github.com/pa-decarvalho/python-template-example).
+
+This repository serves as a reference for the output of the template generation and is also used to test updates and improvements.
