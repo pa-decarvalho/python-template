@@ -35,6 +35,7 @@ def test_all_files_are_generated() -> None:
         ".config/yamllint.yml",
         ".devcontainer/devcontainer.json",
         ".devcontainer/Dockerfile",
+        ".taskfiles/copier.yml",
         ".taskfiles/lint.yml",
         ".taskfiles/test.yml",
         f"src/{DATA_SAMPLE['project_name'].replace('-', '_')}/__init__.py",
