@@ -1,3 +1,12 @@
+## 0.5.0 (2025-02-24)
+
+### Feat
+
+- add bsd-3-clause license
+- add gpl3 license
+- add apache2 and none options for licenses
+- add license file to the template
+
 ## 0.4.0 (2025-02-23)
 
 ### Feat
