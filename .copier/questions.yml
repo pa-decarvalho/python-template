@@ -25,7 +25,7 @@ author_name:
 
 author_email:
   type: str
-  placeholder: yourname@email.com
+  placeholder: michael.scott@dunder-mifflin.com
   help: Enter your email
   validator: |
     {% if not (author_email | regex_search('([A-Za-z0-9]+[.-_])*[A-Za-z0-9]+@[A-Za-z0-9-]+(\.[A-Z|a-z]{2,})+')) %}
