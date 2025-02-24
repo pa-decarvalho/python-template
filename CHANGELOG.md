@@ -1,3 +1,9 @@
+## 0.6.0 (2025-02-24)
+
+### Feat
+
+- add gitignore file to the template
+
 ## 0.5.0 (2025-02-24)
 
 ### Feat
