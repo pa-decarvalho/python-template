@@ -31,3 +31,14 @@ author_email:
     {% if not (author_email | regex_search('([A-Za-z0-9]+[.-_])*[A-Za-z0-9]+@[A-Za-z0-9-]+(\.[A-Z|a-z]{2,})+')) %}
     Please enter a valid email address
     {% endif %}
+
+license:
+  type: str
+  default: "MIT"
+  help: "Select a license (see: https://choosealicense.com)"
+  choices:
+    - Apache-2.0
+    - BSD-3-Clause
+    - GPL-3.0
+    - MIT
+    - None

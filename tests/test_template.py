@@ -12,6 +12,7 @@ DATA_SAMPLE = {
     "description": "My description",
     "author_name": "Dwight Schrute",
     "author_email": "dwight.schrute@email.com",
+    "license": "MIT",
 }
 
 
@@ -43,8 +44,9 @@ def test_all_files_are_generated() -> None:
         f"src/{DATA_SAMPLE['project_name'].replace('-', '_')}/py.typed",
         "tests/__init__.py",
         "tests/test_example.py",
-        ".editorconfig",
         ".copier-answers.yml",
+        ".editorconfig",
+        "LICENSE",
         "pyproject.toml",
         "README.md",
         "taskfile.yml",
