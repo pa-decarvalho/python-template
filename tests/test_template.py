@@ -11,7 +11,7 @@ DATA_SAMPLE = {
     "package_name": "test_project",
     "description": "My description",
     "author_name": "Dwight Schrute",
-    "author_email": "dwight.schrute@email.com",
+    "author_email": "dwight.schrute@dunder-mifflin.com",
     "license": "MIT",
 }
 
