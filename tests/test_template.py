@@ -46,6 +46,7 @@ def test_all_files_are_generated() -> None:
         "tests/test_example.py",
         ".copier-answers.yml",
         ".editorconfig",
+        ".gitignore",
         "LICENSE",
         "pyproject.toml",
         "README.md",
