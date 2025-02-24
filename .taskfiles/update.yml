@@ -1,0 +1,19 @@
+---
+version: "3"
+
+tasks:
+  task:
+    desc: Update everything related to Task
+    silent: true
+    cmds:
+      - |
+        sed -i.bak 's/TASK_VERSION=.*/TASK_VERSION={{.TASK_VERSION}}/' .devcontainer/Dockerfile
+        sed -i.bak 's/TASK_VERSION:.*/TASK_VERSION: {{.TASK_VERSION}}/' .github/workflows/lint.yml
+        sed -i.bak 's/TASK_VERSION:.*/TASK_VERSION: {{.TASK_VERSION}}/' .github/workflows/pages.yml
+        sed -i.bak 's/TASK_VERSION:.*/TASK_VERSION: {{.TASK_VERSION}}/' .github/workflows/test.yml
+        sed -i.bak 's/TASK_VERSION=.*/TASK_VERSION={{.TASK_VERSION}}/' template/.devcontainer/Dockerfile
+
+  all:
+    desc: Run all updates
+    cmds:
+      - task: task
