@@ -37,4 +37,6 @@ license:
   default: "MIT"
   help: "Select a license (see: https://choosealicense.com)"
   choices:
+    - Apache-2.0
     - MIT
+    - None
