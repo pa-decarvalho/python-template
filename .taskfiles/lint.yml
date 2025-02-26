@@ -21,6 +21,13 @@ tasks:
     cmds:
       - poetry run yamllint -c .config/yamllint.yml . --strict
 
+  hadolint:
+    desc: Run hadolint linter
+    silent: true
+    cmds:
+      - hadolint .devcontainer/Dockerfile
+      - hadolint template/.devcontainer/Dockerfile
+
   all:
     desc: Run all linters
     silent: true
@@ -28,3 +35,4 @@ tasks:
       - task: cz-check
       - task: ruff
       - task: yamllint
+      - task: hadolint
