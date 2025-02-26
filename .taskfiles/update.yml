@@ -12,8 +12,16 @@ tasks:
         sed -i.bak 's/TASK_VERSION:.*/TASK_VERSION: {{.TASK_VERSION}}/' .github/workflows/pages.yml
         sed -i.bak 's/TASK_VERSION:.*/TASK_VERSION: {{.TASK_VERSION}}/' .github/workflows/test.yml
         sed -i.bak 's/TASK_VERSION=.*/TASK_VERSION={{.TASK_VERSION}}/' template/.devcontainer/Dockerfile
+  hadolint:
+    desc: Update everything related to hadolint
+    silent: true
+    cmds:
+      - |
+        sed -i.bak 's/HADOLINT_VERSION=.*/HADOLINT_VERSION={{.HADOLINT_VERSION}}/' .devcontainer/Dockerfile
+        sed -i.bak 's/HADOLINT_VERSION=.*/HADOLINT_VERSION={{.HADOLINT_VERSION}}/' template/.devcontainer/Dockerfile
 
   all:
     desc: Run all updates
     cmds:
       - task: task
+      - task: hadolint
