@@ -1,3 +1,9 @@
+## 0.7.0 (2025-03-03)
+
+### Feat
+
+- add license param to template pyproject.toml
+
 ## 0.6.0 (2025-02-24)
 
 ### Feat
