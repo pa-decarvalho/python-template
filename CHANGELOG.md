@@ -1,3 +1,9 @@
+## 0.8.0 (2025-03-08)
+
+### Feat
+
+- add I001 and COM812 to ignore in ruff template config
+
 ## 0.7.0 (2025-03-03)
 
 ### Feat
