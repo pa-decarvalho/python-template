@@ -13,6 +13,9 @@ DATA_SAMPLE = {
     "author_name": "Dwight Schrute",
     "author_email": "dwight.schrute@dunder-mifflin.com",
     "license": "MIT",
+    "repo_url": "https://example.com",
+    "mkdocs_site_url": "https://example.com",
+    "mkdocs_theme": "readthedocs",
 }
 
 

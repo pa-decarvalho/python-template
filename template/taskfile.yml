@@ -5,6 +5,7 @@ includes:
   lint: .taskfiles/lint.yml
   test: .taskfiles/test.yml
   copier: .taskfiles/copier.yml
+  mkdocs: .taskfiles/mkdocs.yml
   override:
     taskfile: .taskfiles/override.yml
     flatten: true
@@ -19,7 +20,7 @@ tasks:
     desc: Init project
     silent: true
     cmds:
-      - poetry install --with dev,lint,test
+      - poetry install --with dev,lint,test,docs
 
   clean:
     desc: Cleanup project
