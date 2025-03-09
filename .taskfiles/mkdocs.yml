@@ -22,3 +22,10 @@ tasks:
     cmds:
       - task: init
       - poetry run mkdocs serve
+
+  gh-deploy:
+    desc: Run mkdocs gh-deploy command
+    silent: true
+    cmds:
+      - task: init
+      - poetry run mkdocs gh-deploy --force
