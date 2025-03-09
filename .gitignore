@@ -24,3 +24,7 @@ output/
 
 # Project
 *.bak
+
+# MkDocs
+docs/index.md
+site/

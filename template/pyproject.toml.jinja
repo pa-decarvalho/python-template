@@ -36,6 +36,11 @@ optional = true
 [tool.poetry.group.test.dependencies]
 pytest = "^8.3.4"
 
+[tool.poetry.group.docs]
+optional = true
+[tool.poetry.group.docs.dependencies]
+mkdocs = "^1.6.1"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
