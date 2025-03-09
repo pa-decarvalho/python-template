@@ -1,6 +1,7 @@
 # Python Template
 
-[![Copier](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/copier-org/copier/master/img/badge/badge-grayscale-inverted-border-orange.json)](https://github.com/copier-org/copier)
+[![copier](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/copier-org/copier/master/img/badge/badge-grayscale-inverted-border-orange.json)](https://github.com/copier-org/copier)
+![license](https://img.shields.io/github/license/pa-decarvalho/python-template)
 
 A modern Python package template that helps you quickly bootstrap new Python projects with best practices and common tools already set up.
 
