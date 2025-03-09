@@ -1,3 +1,9 @@
+## 0.10.0 (2025-03-09)
+
+### Feat
+
+- add project.urls in pyproject.toml template config
+
 ## 0.9.0 (2025-03-09)
 
 ### Feat
