@@ -1,3 +1,10 @@
+## 0.9.0 (2025-03-09)
+
+### Feat
+
+- add mkdocs site folder and index.md to template gitignore
+- add mkdocs in template
+
 ## 0.8.0 (2025-03-08)
 
 ### Feat
