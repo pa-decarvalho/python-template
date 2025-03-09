@@ -31,4 +31,4 @@ jobs:
           pip install poetry
           task init
       - name: Publish MkDocs to Github Pages
-        run: poetry run mkdocs gh-deploy --force
+        run: task mkdocs:gh-deploy
